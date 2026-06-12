@@ -1,13 +1,7 @@
 streamlit>=1.35.0
-google-cloud-firestore>=2.16.0
-google-cloud-storage>=2.16.0
-google-cloud-pubsub>=2.21.0
-google-cloud-aiplatform>=1.57.0
-google-auth>=2.29.0
-Pillow>=10.3.0
-requests>=2.31.0
 folium>=0.16.0
 streamlit-folium>=0.20.0
 pandas>=2.2.0
 plotly>=5.20.0
-streamlit-extras>=0.4.0
+python-dateutil>=2.9.0
+Pillow>=10.3.0
