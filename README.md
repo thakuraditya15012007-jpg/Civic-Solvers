@@ -49,8 +49,6 @@
 - Workers can claim repair completion without doing anything
 - Poor quality repairs repeat because there is no accountability
 
-**AWS AI for Bharat Problem Statement:**
-> Manual, unverified civic reporting causes 15-day delays and erodes public trust.
 
 ---
 
@@ -82,10 +80,10 @@ In the entire complaint lifecycle, humans do exactly 3 things. Everything else i
 - Accepts the assigned job (one button click)
 - Uploads completion photo after finishing repair
 
-**Human Action 3 â€” Authority**
+**Human Action 3  Authority**
 - Creates account
 - Views the auto-analyzed and auto-prioritized complaint
-- Assigns a worker (one button click â€” AI suggests best worker by rating)
+- Assigns a worker (one button click  AI suggests best worker by rating)
 
 **Everything AI does automatically after these 3 actions:**
 - Analyzes photo and detects AI-generated or fake images
@@ -123,7 +121,7 @@ In the entire complaint lifecycle, humans do exactly 3 things. Everything else i
 13. Gamification points awarded to citizen automatically
 14. Complaint closed with full auditable trail
 
-**Escalation Flow â€” When Worker Does Not Act:**
+**Escalation Flow  When Worker Does Not Act:**
 
 1. 24 hours pass without worker accepting the assignment
 2. Drone Patrol detects the violation automatically on next Authority dashboard load
@@ -203,7 +201,7 @@ Maximum value: 100
 
 ### Agent 3: Memory Agent
 
-Detects recurring infrastructure failures at the same location using the Haversine formula in pure Python to cluster GPS coordinates within 100 metres. If 2 or more prior complaints exist at the same cluster, it marks the complaint as recurring and adds +15 to the risk score. This enables contractor auditing â€” identifying that a specific contractor's roads keep failing.
+Detects recurring infrastructure failures at the same location using the Haversine formula in pure Python to cluster GPS coordinates within 100 metres. If 2 or more prior complaints exist at the same cluster, it marks the complaint as recurring and adds +15 to the risk score. This enables contractor auditing  identifying that a specific contractor's roads keep failing.
 
 ### Agent 4: Planning Agent
 
@@ -257,7 +255,7 @@ Civic Solvers uses blockchain for immutable audit trails, not cryptocurrency. Ev
 
 The drone system operates in two fully autonomous modes. It is never triggered manually by any human.
 
-**Mode 1 â€” Repair Verification:**
+**Mode 1  Repair Verification:**
 
 Triggered automatically when worker uploads completion photo.
 
@@ -274,7 +272,7 @@ Possible verdicts:
 
 On fake completion: management complaint filed automatically, blockchain records FAKE_COMPLETION, worker rating penalized, complaint reassigned.
 
-**Mode 2 â€” Autonomous Patrol and Escalation:**
+**Mode 2  Autonomous Patrol and Escalation:**
 
 Triggered automatically on every Authority Dashboard load. No button click ever needed.
 
@@ -325,19 +323,19 @@ Gamification solves the citizen adoption problem which is the number one failure
 
 ## 9. Three Dashboards
 
-**Citizen Portal** â€” https://civic-solvers-ai.streamlit.app/Citizen
+**Citizen Portal**  https://civic-solvers-ai.streamlit.app/Citizen
 
 - File a Complaint: Photo upload with automatic GPS extraction from EXIF, AI auto-suggests issue type and description, one submit button triggers full AI pipeline
 - Track My Complaints: 7-step visual tracker showing Submitted, AI Audit, Assigned, Repairing, Finished, Drone Scan, Verified
 - My Civic Score: Current tier, points history, progress bar, city leaderboard
 
-**Worker Portal** â€” https://civic-solvers-ai.streamlit.app/Worker
+**Worker Portal**  https://civic-solvers-ai.streamlit.app/Worker
 
 - My Job Queue: Shows only complaints assigned to this specific worker with AI repair plan and Google Maps navigation link
 - Upload Repair Proof: Photo upload automatically triggers drone verification with no manual button
 - My Performance: Average rating, completed jobs, performance flag, citizen comments
 
-**Authority Command Center** â€” https://civic-solvers-ai.streamlit.app/Authority
+**Authority Command Center**  https://civic-solvers-ai.streamlit.app/Authority
 
 - Live Dashboard: Real-time KPI cards from actual data
 - Issue Management: Full complaint table, expand any complaint for complete AI analysis, assign workers
@@ -402,8 +400,7 @@ Gamification solves the citizen adoption problem which is the number one failure
 **Run locally:**
 
 ```bash
-git clone https://github.com/shreyas07-anonymous/Civic_Solvers-AI-for-Bharat
-cd civicsolvers
+git clone 
 python -m venv .venv
 .venv\Scripts\activate
 pip install streamlit folium streamlit-folium pandas plotly python-dateutil Pillow
@@ -420,59 +417,59 @@ streamlit run app.py
 
 Total time: 5 minutes.
 
-**0:00 â€” Opening**
+**0:00  Opening**
 Say: India resolves only 30% of civic complaints. Manual processing causes 15-day delays. Civic Solvers changes this â€” AI handles everything after the first photo upload.
 
-**0:30 â€” Citizen Registration**
-Register with Name, Phone, Aadhar, City, Ward. Try registering again with same Aadhar â€” show the duplicate rejection.
+**0:30  Citizen Registration**
+Register with Name, Phone, Aadhar, City, Ward. Try registering again with same Aadhar  show the duplicate rejection.
 Say: One Aadhar, one account. Fraud-proof from registration.
 
-**1:15 â€” File a Complaint**
+**1:15  File a Complaint**
 Upload pothole photo. Check Arterial road and Near school zone. Click Submit. Watch complaint auto-advance to ASSIGNED within 3 seconds.
 Say: Photo hashed to blockchain before AI sees it. Four AI agents run in 30 seconds â€” Vision, Risk, Memory, Planning.
 
-**2:00 â€” Authority Dashboard**
+**2:00  Authority Dashboard**
 Login as authority. Show real complaint with CRITICAL priority, risk score, INR budget, repair plan. Show heatmap. Assign worker.
 Say: Authority gets an auto-prioritized AI-analyzed queue. One click to assign.
 
-**2:45 â€” Worker Portal**
+**2:45  Worker Portal**
 Login as worker. Show only their assigned job. Accept. Upload completion photo. Watch drone verdict appear automatically.
 Say: Worker uploads proof. Drone compares before and after. Zero human trigger.
 
-**3:30 â€” Drone Escalations Tab**
+**3:30  Drone Escalations Tab**
 Show management complaint filed by DRONE_AUTONOMOUS_SYSTEM.
 Say: If worker does not accept within 24 hours, drone files a management complaint automatically. No human clicks this. Ever.
 
-**4:00 â€” Blockchain Audit**
+**4:00  Blockchain Audit**
 Click Run Full Chain Cryptographic Verification. Show chain intact result.
 Say: Every action is on an immutable blockchain. Cannot be deleted. Cannot be faked.
 
-**4:30 â€” Closing**
+**4:30  Closing**
 Show Citizen Civic Score with points awarded automatically.
-Say: This is not a CRUD app. This is an autonomous governance system. Detection to resolution â€” zero human involvement.
+Say: This is not a CRUD app. This is an autonomous governance system. Detection to resolution  zero human involvement.
 
 ---
 
 ## 14. Future Roadmap
 
-**Phase 1 â€” Pilot (3 months)**
+**Phase 1  Pilot (3 months)**
 - Deploy in 1 to 2 municipal wards
 - Partner with local NGOs for citizen adoption
 - QR codes at common problem locations for instant reporting
 
-**Phase 2 â€” City-Wide (6 months)**
+**Phase 2  City-Wide (6 months)**
 - Full city deployment
 - Real Gemini Vision API integration
 - Google Cloud Firestore for scalable storage
 - SMS notifications via Twilio
 
-**Phase 3 â€” State Level (12 months)**
+**Phase 3  State Level (12 months)**
 - Multi-city deployment
 - Voice complaints in 11 Indian languages
 - WhatsApp bot for rural areas
 - Predictive maintenance ML model
 
-**Phase 4 â€” National (24 months)**
+**Phase 4  National (24 months)**
 - All 4,000+ urban local bodies
 - Real drone hardware via MAVLink protocol
 - Hyperledger Fabric for enterprise blockchain
@@ -497,7 +494,7 @@ Say: This is not a CRUD app. This is an autonomous governance system. Detection 
 
 **Why Civic Solvers wins:**
 - Only solution with 4-agent multi-agent AI architecture
-- Recurring issue detection is unique â€” no other civic platform has memory
+- Recurring issue detection is unique  no other civic platform has memory
 - Deterministic scoring means no AI bias in priority decisions
 - Complete transparency from submission to verified completion
 - Built specifically for Indian infrastructure challenges and scale
