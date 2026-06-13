@@ -4,7 +4,6 @@
 
 
 **Live Prototype:** https://civic-solvers-ai.streamlit.app/
-**Demo Video:** https://drive.google.com/file/d/1CCLh_InEwMZ4LmKQY3gpF8YrFRxoekef/view
 
 > India receives 1.5 crore civic complaints yearly but resolves only 30%. Civic Solvers targets 90%+ using a fully autonomous AI system that requires only 3 human actions for the entire complaint lifecycle.
 
