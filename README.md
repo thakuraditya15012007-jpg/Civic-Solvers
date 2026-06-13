@@ -482,15 +482,15 @@ Say: This is not a CRUD app. This is an autonomous governance system. Detection 
 | Feature | Other Civic Apps | Civic Solvers |
 |---|---|---|
 | 4 specialized AI agents | No | Yes |
-| Recurring issue detection | No | Yes â€” Memory Agent |
-| Deterministic risk scoring | No | Yes â€” legally defensible |
+| Recurring issue detection | No | Yes  Memory Agent |
+| Deterministic risk scoring | No | Yes  legally defensible |
 | Autonomous drone verification | No | Yes â€” no human trigger |
-| Fake complaint AI detection | No | Yes â€” blockchain verified |
-| Management accountability | No | Yes â€” auto-filed by drone |
+| Fake complaint AI detection | No | Yes  blockchain verified |
+| Management accountability | No | Yes  auto-filed by drone |
 | Gamification Bronze to Diamond | No | Yes |
 | Fully offline capable | No | Yes |
-| Immutable blockchain audit | No | Yes â€” SHA-256 tamper detection |
-| Worker reputation system | No | Yes â€” rating-based assignment |
+| Immutable blockchain audit | No | Yes  SHA-256 tamper detection |
+| Worker reputation system | No | Yes  rating-based assignment |
 
 **Why Civic Solvers wins:**
 - Only solution with 4-agent multi-agent AI architecture
