@@ -70,12 +70,12 @@ Civic Solvers is a fully autonomous AI-powered civic issue management system. It
 
 In the entire complaint lifecycle, humans do exactly 3 things. Everything else is handled automatically by AI agents.
 
-**Human Action 1 â€” Citizen**
+**Human Action 1  Citizen**
 - Creates account with Aadhar verification (one account per person enforced)
 - Uploads photo of civic issue
 - Submits the complaint form
 
-**Human Action 2 â€” Worker**
+**Human Action 2  Worker**
 - Creates account
 - Accepts the assigned job (one button click)
 - Uploads completion photo after finishing repair
@@ -107,7 +107,7 @@ In the entire complaint lifecycle, humans do exactly 3 things. Everything else i
 **Normal Complaint Flow:**
 
 1. Citizen uploads photo and submits complaint
-2. Vision Agent analyzes photo â€” confirms issue type, checks for fake image, extracts GPS from EXIF
+2. Vision Agent analyzes photo  confirms issue type, checks for fake image, extracts GPS from EXIF
 3. Risk Agent calculates priority score using deterministic pure Python formula
 4. Memory Agent checks if this location had previous complaints within 100 metres
 5. Planning Agent generates repair plan with dynamic INR budget
@@ -418,7 +418,7 @@ streamlit run app.py
 Total time: 5 minutes.
 
 **0:00  Opening**
-Say: India resolves only 30% of civic complaints. Manual processing causes 15-day delays. Civic Solvers changes this â€” AI handles everything after the first photo upload.
+Say: India resolves only 30% of civic complaints. Manual processing causes 15-day delays. Civic Solvers changes this  AI handles everything after the first photo upload.
 
 **0:30  Citizen Registration**
 Register with Name, Phone, Aadhar, City, Ward. Try registering again with same Aadhar  show the duplicate rejection.
@@ -426,7 +426,7 @@ Say: One Aadhar, one account. Fraud-proof from registration.
 
 **1:15  File a Complaint**
 Upload pothole photo. Check Arterial road and Near school zone. Click Submit. Watch complaint auto-advance to ASSIGNED within 3 seconds.
-Say: Photo hashed to blockchain before AI sees it. Four AI agents run in 30 seconds â€” Vision, Risk, Memory, Planning.
+Say: Photo hashed to blockchain before AI sees it. Four AI agents run in 30 seconds  Vision, Risk, Memory, Planning.
 
 **2:00  Authority Dashboard**
 Login as authority. Show real complaint with CRITICAL priority, risk score, INR budget, repair plan. Show heatmap. Assign worker.
